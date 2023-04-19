@@ -17,7 +17,7 @@ use crate::Error;
 #[cfg(feature = "napi5")]
 use crate::Result;
 
-pub struct JsObject(pub(crate) Value);
+pub struct JsObject(pub Value);
 
 #[cfg(feature = "napi5")]
 pub struct FinalizeContext<T: 'static, Hint: 'static> {

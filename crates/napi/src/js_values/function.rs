@@ -10,7 +10,7 @@ use crate::{bindgen_runtime::TypeName, JsString};
 use crate::{check_pending_exception, ValueType};
 use crate::{sys, Env, Error, JsObject, JsUnknown, NapiRaw, NapiValue, Result, Status};
 
-pub struct JsFunction(pub(crate) Value);
+pub struct JsFunction(pub Value);
 
 impl TypeName for JsFunction {
   fn type_name() -> &'static str {
